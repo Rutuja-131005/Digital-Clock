@@ -61,7 +61,3 @@ This project serves as a great practice for beginner and intermediate developers
 * Work with **date and time APIs**
 * Build **customizable UI components**
 * Enhance skills in **responsive design**
-
----
-
-Would you like me to create a `README.md` file with this content?
