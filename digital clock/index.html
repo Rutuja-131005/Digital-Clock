@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock-container" id="clockContainer">
+        <div class="clock-header" id="clockHeader">
+            <div class="clock-title">Digital Clock</div>
+            <div class="controls">
+                <button class="btn" id="settingsBtn" title="Settings">⚙️</button>
+                <button class="btn" id="minimizeBtn" title="Minimize">−</button>
+                <button class="btn" id="floatBtn" title="Float Mode">📌</button>
+            </div>
+        </div>
+        
+        <div class="time-display" id="timeDisplay">00:00:00</div>
+        <div class="date-display" id="dateDisplay">Monday, January 1, 2024</div>
+        <div class="timezone-display" id="timezoneDisplay">UTC</div>
+        
+        <div class="customization-panel hidden" id="customizationPanel">
+            <div class="control-group">
+                <label>Time Format</label>
+                <div class="format-buttons">
+                    <button class="format-btn active" data-format="12">12 Hour</button>
+                    <button class="format-btn" data-format="24">24 Hour</button>
+                </div>
+            </div>
+            
+            <div class="control-group">
+                <label>Background Color</label>
+                <input type="color" class="color-picker" id="bgColor" value="#667eea">
+            </div>
+            
+            <div class="control-group">
+                <label>Text Color</label>
+                <input type="color" class="color-picker" id="textColor" value="#ffffff">
+            </div>
+            
+            <div class="control-group">
+                <label>Font Size</label>
+                <input type="range" class="control-input" id="fontSize" min="20" max="80" value="56">
+            </div>
+            
+            <div class="control-group">
+                <label>Timezone</label>
+                <select class="control-input" id="timezone">
+                    <option value="UTC">UTC</option>
+                    <option value="America/New_York">New York</option>
+                    <option value="America/Los_Angeles">Los Angeles</option>
+                    <option value="Europe/London">London</option>
+                    <option value="Europe/Paris">Paris</option>
+                    <option value="Asia/Tokyo">Tokyo</option>
+                    <option value="Asia/Shanghai">Shanghai</option>
+                    <option value="Asia/Kolkata">India</option>
+                    <option value="Australia/Sydney">Sydney</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label>Clock Title</label>
+                <input type="text" class="control-input" id="clockTitle" placeholder="Enter custom title" value="Digital Clock">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
